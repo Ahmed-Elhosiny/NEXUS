@@ -1,10 +1,31 @@
 {
-  "name": "sandbox-workspace",
+  "name": "nexus",
+  "version": "1.0.0",
+  "description": "Personal Decision Intelligence Platform — Model complex choices systematically with NEXUS",
   "private": true,
   "type": "module",
+  "author": "NEXUS Team",
+  "license": "MIT",
+  "homepage": "https://github.com/nexus-decision/nexus#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nexus-decision/nexus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexus-decision/nexus/issues"
+  },
+  "keywords": [
+    "decision-making",
+    "decision-intelligence",
+    "multi-criteria-analysis",
+    "react",
+    "typescript",
+    "vite"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -33,5 +54,8 @@
     "tailwindcss": "^4.1.7",
     "typescript": "^5.7.0",
     "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
