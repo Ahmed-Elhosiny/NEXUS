@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NEXUS — your personal decision intelligence. Model hard choices with options, weighted criteria, evidence and risk, then stress-test the outcome." />
+    <title>NEXUS — Personal Decision Intelligence</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E7A5F'/%3E%3Ccircle cx='16' cy='9' r='3' fill='%23F1F2EE'/%3E%3Ccircle cx='9' cy='22' r='3' fill='%23E8A33D'/%3E%3Ccircle cx='23' cy='22' r='3' fill='%23F1F2EE'/%3E%3Cpath d='M16 12v4m0 0l-5.5 4m5.5-4l5.5 4' stroke='%23F1F2EE' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var raw = localStorage.getItem('nexus-store');
+          var t = 'light';
+          if (raw) {
+            var s = JSON.parse(raw);
+            if (s && s.state && s.state.theme) t = s.state.theme;
+          } else if (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) {
+            t = 'dark';
+          }
+          if (t === 'dark') document.documentElement.classList.add('dark');
+          document.documentElement.style.backgroundColor = t === 'dark' ? '#0C1210' : '#F1F2EE';
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
