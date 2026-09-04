@@ -1,5 +1,15 @@
+```
+# Dependencies
 node_modules/
-.next/
-dist/
-build/
+
+# Environment
+.env
+.env.*
+.env.local
+
+# Editors
+.vscode/
+
+# Logs
 *.log
+```
